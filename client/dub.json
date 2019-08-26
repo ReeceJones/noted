@@ -1,0 +1,13 @@
+{
+	"authors": [
+		"Reece Jones"
+	],
+	"copyright": "Copyright © 2019, Reece Jones",
+	"dependencies": {
+		"gtk-d": "~>3.9.0"
+	},
+	"description": "A KISS note taking application.",
+	"license": "proprietary",
+	"name": "noted-client",
+	"targetType": "executable"
+}

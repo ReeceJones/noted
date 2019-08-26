@@ -1,0 +1,17 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/noted-client
+noted-client.so
+noted-client.dylib
+noted-client.dll
+noted-client.a
+noted-client.lib
+noted-client-test-*
+*.exe
+*.o
+*.obj
+*.lst
+noted-client*
+noted-server*
