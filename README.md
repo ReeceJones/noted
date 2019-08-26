@@ -5,5 +5,6 @@ Taking notes in word kinda sucks, and OneNote isn't my cup of tea. All I wanted 
 ## Future Plans
 + Server Sync
 + Realtime styling via some markup format.
++ Tabs
 
 <sub>That's it. That is literally all I want from a note taking application</sub>
