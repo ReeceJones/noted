@@ -36,3 +36,13 @@ void saveBufferToFile(string file)
         std.file.write(file, cast(void[])globalTextArea.getBuffer().getText());
     }
 }
+
+void openBufferFromFile(string file)
+{
+    static import std.file;
+
+    if (file !is null)
+    {
+        globalTextArea.getBuffer().setText(cast(string)std.file.read(file));
+    }
+}
