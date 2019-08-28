@@ -131,7 +131,7 @@ public:
         }
     }
 
-    final class MarkdownBloackQuote : MarkdownNode
+    final class MarkdownBlockQuote : MarkdownNode
     {
     public:
         override MarkdownNodeType getType()
