@@ -34,12 +34,18 @@ public:
         {
             return this.children;
         }
+        /// Returns the parent of this node.
+        final MarkdownNode getParent()
+        {
+            return this.parent;
+        }
     private:
         string markdownLabel;
         string dataReference;
         string raw;
         MarkdownNodeType type;
         MarkdownNode[] children;
+        MarkdownNode parent;
     }
 
     final class MarkdownHeader : MarkdownNode
@@ -161,7 +167,10 @@ public:
         H1, H2, H3, H4, H5, H6
     }
 
-    MarkdownNode parseDocument();
+    MarkdownDocument parseDocument(string document, MarkdownNode previousNode = null)
+    {
+        
+    }
 private:
     MarkdownHeaderLevel lineIsHeader(string ln);
     MarkdownDocument[] rootNodes;
