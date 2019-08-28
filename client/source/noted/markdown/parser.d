@@ -9,10 +9,15 @@ public:
     public:
         /// Returns the type of markdown node.
         abstract MarkdownNodeType getType();
-        /// Returns the raw text that is inside a node. This includes tokens.
-        final string getLabel() const
+        /// Returns the "viewable" text that is inside a node. This excludes tokens.
+        final string getLabel()
         {
             return this.markdownLabel;
+        }
+        /// Returns the raw text that is inside a node. This includes tokens.
+        final string getRaw() const
+        {
+            return this.raw;
         }
         /// Returns the reference that the node links to (if any).
         final string getReference() const
@@ -32,6 +37,7 @@ public:
     private:
         string markdownLabel;
         string dataReference;
+        string raw;
         MarkdownNodeType type;
         MarkdownNode[] children;
     }
@@ -80,7 +86,12 @@ public:
         {
             return this.isNumbered;
         }
+        int getListLevel()
+        {
+            return this.listLevel;
+        }
     private:
+        int listLevel;
         bool isNumbered;
     }
 
